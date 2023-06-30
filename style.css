@@ -24,6 +24,7 @@ main {
 
 h1 {
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .logo-container {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .flex {
-  padding: 30px;
+  padding: 2rem 2rem 0;
   text-align: center;
   color: white;
   margin: 50px auto;
@@ -49,12 +50,28 @@ h1 {
 .flex button {
   background: white;
   color: var(--clr-violet);
+  font-family: "Poppins";
+  font-weight: 600;
   padding: 20px 80px;
   border: none;
   border-radius: 2rem;
 }
 .flex .right {
   padding-top: 50px;
+}
+
+.icons {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: space-between;
+}
+.icons .icon {
+  border: solid white 2px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
 }
 
 @media (min-width: 700px) {
@@ -72,5 +89,10 @@ h1 {
     padding: 0;
     align-self: center;
     max-width: 500px;
+  }
+  .icons {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
   }
 }/*# sourceMappingURL=style.css.map */
